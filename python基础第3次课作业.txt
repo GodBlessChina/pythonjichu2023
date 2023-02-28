@@ -1,0 +1,27 @@
+from pwinput import pwinput
+
+zhanghao1 = "zhangsan"
+mima1 = "123456" # todo 密码不能这样存明文
+
+print("输入下列数字")
+print("1 登录")
+print("2 注册")
+print("3 退出")
+
+shuzi = input("请输入数字[1-3]:")
+
+if shuzi=='1':
+    print("走登录流程")
+    zhanghao2 = input("输入账号:")
+    mima2 = pwinput("输入密码:")
+    if zhanghao1==zhanghao2 and mima1==mima2:
+        print("登录成功")
+    else:
+        print("账号或密码错误，登录失败")
+
+elif shuzi=="2":
+    print("走注册流程")
+elif shuzi=="3":
+    print("退出")
+else:
+    print("只能输入1-3.你个憨憨")
