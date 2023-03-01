@@ -1,27 +1,27 @@
 from pwinput import pwinput
 
 zhanghao1 = "zhangsan"
-mima1 = "123456" # todo ÃÜÂë²»ÄÜÕâÑù´æÃ÷ÎÄ
+mima1 = "123456" # todo å¯†ç ä¸èƒ½è¿™æ ·å­˜æ˜æ–‡
 
-print("ÊäÈëÏÂÁĞÊı×Ö")
-print("1 µÇÂ¼")
-print("2 ×¢²á")
-print("3 ÍË³ö")
+print("è¾“å…¥ä¸‹åˆ—æ•°å­—")
+print("1 ç™»å½•")
+print("2 æ³¨å†Œ")
+print("3 é€€å‡º")
 
-shuzi = input("ÇëÊäÈëÊı×Ö[1-3]:")
+shuzi = input("è¯·è¾“å…¥æ•°å­—[1-3]:")
 
 if shuzi=='1':
-    print("×ßµÇÂ¼Á÷³Ì")
-    zhanghao2 = input("ÊäÈëÕËºÅ:")
-    mima2 = pwinput("ÊäÈëÃÜÂë:")
+    print("èµ°ç™»å½•æµç¨‹")
+    zhanghao2 = input("è¾“å…¥è´¦å·:")
+    mima2 = pwinput("è¾“å…¥å¯†ç :")
     if zhanghao1==zhanghao2 and mima1==mima2:
-        print("µÇÂ¼³É¹¦")
+        print("ç™»å½•æˆåŠŸ")
     else:
-        print("ÕËºÅ»òÃÜÂë´íÎó£¬µÇÂ¼Ê§°Ü")
+        print("è´¦å·æˆ–å¯†ç é”™è¯¯ï¼Œç™»å½•å¤±è´¥")
 
 elif shuzi=="2":
-    print("×ß×¢²áÁ÷³Ì")
+    print("èµ°æ³¨å†Œæµç¨‹")
 elif shuzi=="3":
-    print("ÍË³ö")
+    print("é€€å‡º")
 else:
-    print("Ö»ÄÜÊäÈë1-3.Äã¸öº©º©")
+    print("åªèƒ½è¾“å…¥1-3.ä½ ä¸ªæ†¨æ†¨")
